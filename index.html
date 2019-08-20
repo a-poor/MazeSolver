@@ -3,11 +3,31 @@
     <head>
         <meta charset="utf8"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script>
         <script src="GridSquare.js"></script>
         <script src="MazeMaker.js"></script>
         <script src="StarNode.js"></script>
         <script src="AStar.js"></script>
         <script src="sketch.js"></script>
+        <style>
+            body {
+                background-color: white;
+            }
+            h2 {
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: rgb(50,50,50);
+            }
+            /* #canvas {
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            } */
+        </style>
     </head>
-    <body></body>
+    <body>
+        <h2>Recursive Backtracking Maze Generator<br/>
+        with A* Solver</h2>
+        <div id="sketch-holder"></div>
+    </body>
 </html>
