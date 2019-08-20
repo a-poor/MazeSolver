@@ -6,7 +6,10 @@ let solver;
 let solver_built = false;
 
 function setup() {
-    createCanvas(400,400);
+    let cnv = createCanvas(600,600);
+    cnv.parent("sketch-holder");
+    cnv.position((windowWidth - width) / 2);
+
     sq_width = width / n_cols;
     maze_maker = new MazeMaker(n_cols, n_rows, sq_width);
 }
