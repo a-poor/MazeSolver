@@ -31,14 +31,6 @@ class GridSquare {
             this.width,0,
             this.width,this.width
         );
-        // if (this.s) line(
-        //     0,         this.width,
-        //     this.width,this.width
-        // );
-        // if (this.w) line(
-        //     0,0,
-        //     0,this.width
-        // ); 
         pop();
     }
 }
