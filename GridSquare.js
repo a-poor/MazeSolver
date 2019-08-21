@@ -23,6 +23,7 @@ class GridSquare {
         noFill();
         stroke(255);
         strokeWeight(2);
+        strokeCap(SQUARE);
         if (this.n) line(
             0,         0,
             this.width,0
