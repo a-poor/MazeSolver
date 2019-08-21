@@ -1,5 +1,5 @@
-let n_cols = 30;
-let n_rows = 30;
+let n_cols = 25;
+let n_rows = 25;
 let sq_width;
 let maze_maker, solver;
 let solve_maze = false;
