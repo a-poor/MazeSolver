@@ -90,9 +90,6 @@ class AStar {
             return;
         }
 
-        // Draw the open_set and closed_set
-        // ...
-
         // Show the 
         this.draw_path(current);
     }
