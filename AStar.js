@@ -51,7 +51,6 @@ class AStar {
             // Pop the winner off the open set
             current = this.open_set.splice(winner,1)[0];
             this.closed_set.push(current);
-            console.log("Current: "+current.x+" "+current.y);
             // console.log(this.open_set);
 
             // Did you reach the end?
