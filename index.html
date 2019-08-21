@@ -10,24 +10,35 @@
         <script src="AStar.js"></script>
         <script src="sketch.js"></script>
         <style>
-            body {
-                background-color: white;
-            }
-            h2 {
+            h1 {
                 text-align: center;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                color: rgb(50,50,50);
+                font-family: 'Franklin Gothic Medium', Arial, sans-serif;
             }
-            /* #canvas {
-                margin-left: auto;
-                margin-right: auto;
-                display: block;
-            } */
+            div {
+                display: flex;
+                justify-content: center;
+                padding: 1%;
+            }
+            p {
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
         </style>
     </head>
     <body>
-        <h2>Recursive Backtracking Maze Generator<br/>
-        with A* Solver</h2>
+        <h1>Recursive Backtracking Maze Generator<br/>
+        with A* Solver</h1>
         <div id="sketch-holder"></div>
+        <div class="button-holder">
+            <button id="solve-button" type="button" onclick="start_solve();" disabled>Solve</button>
+            <button id="reset-button" type="button" onclick="reset_grid();">Reset</button>
+        </div>
+        <div class="text">
+            <p>Maze generated with a 
+                <a href="https://en.wikipedia.org/wiki/Maze_generation_algorithm">Recursive Backtracker</a>
+                and then solved with the 
+                <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A* Search Algorithm</a>.
+            <br/>Based on Daniel Shiffman's Coding Train coding challenges.</p>
+        </div>
     </body>
 </html>
