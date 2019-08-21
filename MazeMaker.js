@@ -25,21 +25,6 @@ class MazeMaker {
             }
         }
     }
-    // get_sq_move(sq) {
-    //     // Moves: N E S W
-    //     let possible_moves = [];
-    //     if (sq.y > 0) possible_moves.push(0);
-    //     if (sq.x < n_cols-1) possible_moves.push(1);
-    //     if (sq.y < n_rows-1) possible_moves.push(2);
-    //     if (sq.x > 0) possible_moves.push(3);
-
-    //     if (possible_moves.length == 0) {
-    //         return -1;
-    //     } else {
-    //         let r = random(Math.floor(possible_moves.length));
-    //         return possible_moves[r];
-    //     }
-    // }
     get_next_move() {
         if (this.n_unvisited <= 0) {
             console.log("All cells visited.");
@@ -49,10 +34,6 @@ class MazeMaker {
             let cy = this.current_cell.y;
             let possible_moves = [];
             let move_directions = [];
-            // if (cy > 0 && !this.grid[cy-1][cx].visited) possible_moves.push(this.grid[cy-1][cx]);
-            // if (cx < n_cols-1 && !this.grid[cy][cx+1].visited) possible_moves.push(this.grid[cy][cx+1]);
-            // if (cy < n_rows-1 && !this.grid[cy+1][cx].visited) possible_moves.push(this.grid[cy+1][cx]);
-            // if (cx > 0 && !this.grid[cy][cx-1].visited) possible_moves.push(this.grid[cy][cx-1]);
             if (cy > 0 && !this.grid[cy-1][cx].visited) {
                 move_directions.push(0);
                 possible_moves.push(this.grid[cy-1][cx]);
